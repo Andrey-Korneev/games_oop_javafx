@@ -26,7 +26,7 @@ public class BishopBlackTest {
     public void whenWayFigureIsCorrect() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         Cell[] way = bishopBlack.way(Cell.G5);
-        Cell[] expected = { Cell.D2, Cell.E3, Cell.F4, Cell.G5 };
+        Cell[] expected = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         assertArrayEquals(expected, way);
     }
 
@@ -34,7 +34,7 @@ public class BishopBlackTest {
     public void whenWayFigureIsNotCorrect() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         Cell[] way = bishopBlack.way(Cell.G3);
-        Cell[] expected = { Cell.D2, Cell.E3, Cell.F4, Cell.G5 };
+        Cell[] expected = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         assertArrayEquals(expected, way);
     }
 
